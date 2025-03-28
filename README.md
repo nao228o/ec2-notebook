@@ -34,10 +34,6 @@ jupyter notebook password
 nohup jupyter notebook --ip=0.0.0.0 --no-browser &
 ```
 
-### 5. アクセス方法
-ブラウザで以下のURLにアクセス：
-
-```
 
 ## 注意事項
 - セキュリティグループで8888ポートが開放されていることを確認してください
