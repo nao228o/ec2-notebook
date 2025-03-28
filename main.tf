@@ -54,6 +54,14 @@ resource "aws_security_group" "example" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Jupyter Notebook用のポート追加
+  ingress {
+    from_port   = 8888
+    to_port     = 8888
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]  # 本番環境では適切なIPレンジに制限することを推奨
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
